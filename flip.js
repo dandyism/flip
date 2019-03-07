@@ -1,3 +1,5 @@
+'use strict'
+
 var config = {
   headsOdds: 50,
   disabledSeconds: 300,
