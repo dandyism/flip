@@ -25,6 +25,7 @@ function flip () {
   flipButton.disabled = true
   setTimeout(function () {
     flipButton.disabled = false
+    resultDisplay.innerHTML = ''
   }, config.disabledSeconds * 1000)
 }
 
