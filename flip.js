@@ -3,8 +3,8 @@
 var config = {
   headsOdds: 50,
   disabledSeconds: 300,
-  headsMessage: 'Facebook time!',
-  tailsMessage: 'No Facebook right now – face your fears!'
+  headsMessage: 'Turn to Facebook for some deserved respite from your labor.',
+  tailsMessage: 'No Facebook. Go now – cut with the scythe of your workings the thorns casting shadows in your unclear mind!'
 }
 
 var resultDisplay = document.querySelector('#resultDisplay')
