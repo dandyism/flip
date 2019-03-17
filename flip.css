@@ -1,0 +1,29 @@
+.app {
+  width: 300px;
+  margin: 0 auto;
+  font-size: 24px;
+  text-align: center;
+}
+
+.resultDisplay {
+  text-align: left;
+  min-height: 150px;
+  border: 1px solid #000000;
+  border-radius: 15px;
+  background: #f5f5f5;
+  margin: 1em auto;
+  padding: 1em;
+}
+
+.flipButton {
+  font-family: sans-serif;
+  width: 150px;
+  margin: 0 auto;
+  background: #eaba5b;
+  padding: 5px;
+  border-radius: 15px;
+}
+
+.flipButton:disabled {
+  background: lightgray;
+}
