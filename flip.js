@@ -7,7 +7,7 @@ var config = {
   tailsMessage: 'No Facebook. Go now – cut with the scythe of your workings the thorns casting shadows in your unclear mind!'
 }
 
-var resultDisplay = document.querySelector('#resultDisplay')
+var resultDisplay = document.querySelector('#resultDisplay p')
 var flipButton = document.querySelector('#flipButton')
 
 var secondsLeft = 0
@@ -31,6 +31,7 @@ function tick (start) {
     clearInterval(timerId)
     flipButton.disabled = false
     resultDisplay.innerHTML = ''
+    resultDisplay.classList.remove('loaded')
     flipButton.innerHTML = 'flip'
   } else {
     let minutes = Math.floor(remaining / 60)
@@ -44,6 +45,7 @@ function flip () {
   var heads = Math.floor(Math.random() * 100) + 1 < config.headsOdds
 
   resultDisplay.innerHTML = heads ? config.headsMessage : config.tailsMessage
+  resultDisplay.classList.add('loaded')
   if (heads) {
     let fb = window.open('https://www.facebook.com')
 

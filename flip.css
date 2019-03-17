@@ -15,6 +15,18 @@
   padding: 1em;
 }
 
+.resultDisplay p {
+  opacity: 0;
+
+  -webkit-transition: opacity 1s ease-in; /* Safari, Chrome and Opera > 12.1 */
+  -moz-transition: opacity 1s ease-in; /* Firefox < 16 */
+  transition: opacity 1s ease-in;
+}
+
+.resultDisplay p.loaded {
+  opacity: 1;
+}
+
 .flipButton {
   font-family: sans-serif;
   width: 150px;
