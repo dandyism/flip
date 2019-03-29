@@ -47,11 +47,13 @@ function flip () {
   resultDisplay.innerHTML = heads ? config.headsMessage : config.tailsMessage
   resultDisplay.classList.add('loaded')
   if (heads) {
-    let fb = window.open('https://www.facebook.com')
+    setTimeout(() => {
+      let fb = window.open('https://www.facebook.com')
 
-    if (fb && !fb.closed) {
-      fb.focus()
-    }
+      if (fb && !fb.closed) {
+        fb.focus()
+      }
+    }, 2000)
   }
 
   flipButton.disabled = true
