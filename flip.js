@@ -3,8 +3,8 @@
 var config = {
   headsOdds: 50,
   disabledSeconds: 300,
-  headsMessage: 'Turn to Facebook for some deserved respite from your labor.',
-  tailsMessage: 'No Facebook. Go now – cut with the scythe of your workings the thorns casting shadows in your unclear mind!'
+  headsMessage: 'You can derma now. Be careful!',
+  tailsMessage: 'No derma! Stim instead.'
 }
 
 var resultDisplay = document.querySelector('#resultDisplay p')
@@ -46,15 +46,6 @@ function flip () {
 
   resultDisplay.innerHTML = heads ? config.headsMessage : config.tailsMessage
   resultDisplay.classList.add('loaded')
-  if (heads) {
-    setTimeout(() => {
-      let fb = window.open('https://www.facebook.com')
-
-      if (fb && !fb.closed) {
-        fb.focus()
-      }
-    }, 2000)
-  }
 
   flipButton.disabled = true
   var timerStart = Date.now()
