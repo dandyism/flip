@@ -4,7 +4,7 @@ var config = {
   headsOdds: 50,
   disabledSeconds: 300,
   headsMessage: 'You can derma now. Be careful!',
-  tailsMessage: 'No derma! Stim instead.'
+  tailsMessage: 'No derma! You are already beautiful and safe.'
 }
 
 var resultDisplay = document.querySelector('#resultDisplay p')
